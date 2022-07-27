@@ -144,7 +144,9 @@ public class AesStringEncryptor implements StringEncryptor {
                 sliceBuffer.flip();
                 stringBuilder.append(sliceBuffer.getChar());
                 sliceBuffer.clear();
+                LOGGER.info("----------------");
             }
+            LOGGER.info(stringBuilder.toString());
             return stringBuilder.toString();
         } catch (NoSuchAlgorithmException |
                 NoSuchPaddingException |

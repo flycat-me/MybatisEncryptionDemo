@@ -40,6 +40,6 @@ public class MybatisEncryptionDemoApplication implements ApplicationContextAware
         EncryptedData data = mapper.getEncrypted(newDate.getId());
         log.info("Item {}", data);
         EncryptedData queryResult = mapper.queryData(new EncryptedString("中文"));
-        log.info("query result {}", queryResult);
+        log.info("query result {}", queryResult.getEncryptedData().getValue());
     }
 }
