@@ -10,7 +10,7 @@ spring:
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
   configuration:
-    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
-  type-aliases-package: com.stableforever.mybatis.encryption.alias
-  type-handlers-package: com.stableforever.mybatis.encryption.handler
+#  type-aliases-package: com.stableforever.mybatis.encryption.alias
+  type-handlers-package: com.flycat.mybatisencryptiondemo.handler
