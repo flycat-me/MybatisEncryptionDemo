@@ -20,8 +20,8 @@ class MybatisEncryptionDemoApplicationTests {
 
     @Test
     void TypeHandlerTest(){
-        customerMapper.saveCustomer(new Encrypt("phone55"),"address");
-        Customer phone = customerMapper.getByPhone(new Encrypt("phone"));
+        customerMapper.saveCustomer(new Encrypt("phone66"),"address");
+        Customer phone = customerMapper.getByPhone(new Encrypt("phone66"));
         System.out.println(phone.getPhone().getValue());
     }
 
